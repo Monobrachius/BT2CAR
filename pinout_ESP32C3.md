@@ -9,19 +9,16 @@ CAN-bus
 Any pin: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf page 32.
 - GPIO4 CTX/twai_rx                       like
 - GPIO5 CRX/twai_rx
--          twai_bus_off_on      probably not needed
--          twai_clkout          robably not needed
--      https://github.com/MagnusThome/RejsaCAN-ESP32
--      https://github.com/LuukEsselbrugge/Volve
+- TBD        twai_bus_off_on      probably not needed
+- TBD        twai_clkout          robably not needed
+https://github.com/MagnusThome/RejsaCAN-ESP32  
+https://github.com/LuukEsselbrugge/Volve
 
 I2S-bus  
-Any pin: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf page 32.
--      CTX/twai_rx      
--      CRX/twai_rx
--          twai_bus_off_on      probably not needed
--          twai_clkout          robably not needed
--      https://github.com/MagnusThome/RejsaCAN-ESP32
-
+Any pin: https://www.espressif.com/sites/default/files/documentation/esp32-c3_datasheet_en.pdf page 31.
+- TBD
+- TBD
+- TBD
 
 OBDII pinout
 - 4    Chassis GND
