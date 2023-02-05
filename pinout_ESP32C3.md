@@ -3,7 +3,7 @@ ESP32-C3 pinout
 | PIN | name | description|
 |-----|------|------------|
 | 9 | button | activated WIFI for configuration CAN buttons and selection of devices|
-| 6 | led    |    |
+| 6 | led    | not just a led, but WS2812b   |
 |0/A0| Vaccu | voltage coming from accu: will be used to switch to low-power mode after TBD minutes. Apparantly treshold used is 13V when motor is off|
 | e.g. GPIO4 | CTX/twai_rx          | CAN-bus, can be any pin, see page 32 manual |
 | e.g. GPIO5 | CRX/twai_rx          | CAN-bus, can be any pin, see page 32 manual |
