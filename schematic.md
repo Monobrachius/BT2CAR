@@ -7,13 +7,16 @@ Because it's barely impossible to recive music stream on ESP32 and send it to ot
 
 ```mermaid
   flowchart LR;
+    
     subgraph ODBSys[ODB communication system]
-      BT2CarODB[ESP32C3 <br> BLE Client]<-- Listen stearing wheel <br> buttons event--> ODB[Car ODB II jack ] 
+      direction LR
+      BT2CarODB[ESP32C3 <br>_________<br>BLE Client]<-- Listen stearing wheel <br> buttons event--> ODB[Car ODB II jack ] 
       BT2CarODB -. Send ODB events <br> via BLE..-> Media
       ODB == Power ==> BT2CarODB
     end
+    
     subgraph Media[Media system]
-      Phone1(Phone)-. A2DP .->BT2CarAudio[ESP32 <br> BLE server  <br> WEB accepoint]
+      Phone1(Phone)-. A2DP .->BT2CarAudio[ESP32 <br>_________<br>Bluethooth classic server <br> BLE server  <br> WEB accepoint]
       BT2CarAudio-. Control playback .->Phone1
       BT2CarAudio---Cable--> Stereo[Car mediacenter <br>AUX-in jack]
       Browser(Web browser) -. Conrol playback .-> BT2CarAudio
