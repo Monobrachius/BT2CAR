@@ -2,7 +2,7 @@
 Proposed schema
 ---
 Because it's barely impossible to recive music stream on ESP32 and send it to other bluethooth device at the same time I suggest use 2 ESP32 controllers:
- - One for streaming music, runnig WI-FI acces point and webserver, and Bluethooth Low Energy (BLE) Server (ESP Media)
+ - One for streaming music, runnig WI-FI acces point and webserver, and also running Bluethooth Low Energy (BLE) Server (ESP Media)
  - Second one for communicating with ODB and sending/reciving info to the first one via BLE protocol (ESP ODB)
 
 ```mermaid
